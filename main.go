@@ -133,7 +133,7 @@ func GoogleSheetWrite(a, b, c, d string) {
 		option.WithScopes(sheets.SpreadsheetsScope),
 	)
 	CheckIfError(err)
-	spreadsheetId := "1TbdRCdIQUX5OvBVAWEA16tgVTowKI2QV0GzXqtnu5PE"
+	spreadsheetId := "your Id aaaaRCcccUX5OvBVAWEA16tgVTowKI2QV0G"
 	ss := srv.Spreadsheets.Values
 	cells, err := ss.Get(spreadsheetId, "A1:F9999").Do()
 	CheckIfError(err)
